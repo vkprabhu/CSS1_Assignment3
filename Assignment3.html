@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      form {
+        background-image: url('image.jpg');
+        position: absolute;
+        left: auto;
+        right: auto;
+      }
+      p#name,p#email,p#phone,p#address,p#country,p#code,p#cardnumber,p#securitycode,p#cardname {
+        background-color: lightgrey;
+        border: 1px solid white;
+        padding: 10px;
+        width: 500px;
+        margin: 12px;
+      }
+      span {
+        margin: 10px;
+        color: white;
+
+      }
+      input,textarea {
+        margin: 5px 100px;
+        padding: 5px;
+        border-radius: 4px;
+      }
+      p#radio {
+        background-color: lightgrey;
+        border: 1px solid white;
+        padding: 10px;
+        width: 500px;
+        margin: 12px;
+      }
+      p#radio input {
+        margin-left: 50px;
+        margin-right: 0px;
+      }
+      div.buy input {
+        margin: 5px 240px;
+        padding: 5px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div class="first">
+        <span>Step 1:Your details</span><br />
+        <p id="name"><span>Name</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="First and last name" /></p>
+        <p id="email"><span>Email</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" placeholder="example@domain.com" /></p>
+        <p id="phone"><span>Phone</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" placeholder="e.g. +4488559966" /></p>
+      </div>
+      <div class="second">
+        <span>Step 1:Delivery address</span><br />
+        <p id="address"><span>Address</span>&nbsp;&nbsp;&nbsp;<textarea rows="10" cols="22"></textarea></p>
+        <p id="code"><span>Post code</span> <input type="number"  /></p>
+        <p id="country"><span>Country</span>&nbsp;&nbsp;&nbsp;<input type="text" /></p>
+      </div>
+      <div class="third">
+        <span>Step 1:Card details</span><br />
+        <p id="radio"><span> Card type</span><br /><input type="radio" name="cardtype" />VISA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="cardtype" />AmEx &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="cardtype" />Mastercard </p>
+        <p id="cardnumber"><span>Card number</span><input type="number"  /></p>
+        <p id="securitycode"><span> Security code</span><input type="number"  /></p>
+        <p id="cardname"><span>Card name</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /></p>
+      </div>
+      <div class="buy">
+        <input type="button" value="BUY IT!"  />
+      </div>
+    </form>
+  </body>
+</html>
